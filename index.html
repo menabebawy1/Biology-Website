@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>One Page Wonder - Start Bootstrap Template</title>
+    <title>Biology Review</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -17,12 +17,10 @@
     <!-- Custom CSS -->
     <link href="css/wow.css" rel="stylesheet">
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 
 </head>
 
@@ -39,19 +37,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">AP Biology</a>
+                <a id="navt" class="navbar-brand" href="#myPage">AP Biology</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <div class="collapse navbar-collapse" id="b1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#about">Theme 1</a>
+                        <a id="navt" href="#about">Water <span class="glyphicon glyphicon-tint"></span></a>
                     </li>
                     <li>
-                        <a href="#services">Theme 2</a>
+                        <a id="navt" href="#services">Evolution <span class="glyphicon glyphicon-globe"></span></a>
                     </li>
                     <li>
-                        <a href="#contact">Theme 3</a>
+                        <a id="navt" href="#contact">Heredity <span class="glyphicon glyphicon-user"></span></a>
                     </li>
                 </ul>
             </div>
@@ -65,6 +63,7 @@
         <div class="headline">
             <div class="container head">
                 <h1>Biology Gives You A Brain Life Turns It Into A Mind</h1>
+                <br><br>
                 <h2>Studying for the AP Biology exam</h2>
             </div>
         </div>
@@ -73,13 +72,25 @@
     <!-- Page Content -->
     <div class="container">
 
-        <hr class="featurette-divider">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br id="about">
+        <br>
+        <br>
+        <br>
+
 
         <!-- First Featurette -->
-        <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="css/water.jpg">
-            <h2 class="featurette-heading">The first theme
-                <span class="text-muted">is water</span>
+        <div class="featurette">
+            <img class="featurette-image img-circle img-responsive pull-right" src="css/wat.jpg">
+            <h2 class="featurette-heading">The First Theme Is
+                <span class="text-muted">Water</span>
             </h2>
             <p class="lead">
                 <ol><b>1. Water has a high heat capacity</b></ol>
@@ -108,28 +119,28 @@
             </p>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider"  id="services">
 
         <!-- Second Featurette -->
-        <div class="featurette" id="services">
+        <div class="featurette">
             <img class="featurette-image img-circle img-responsive pull-left" src="css/evo.jpg">
             <h2 class="featurette-heading">The Second Theme Is
                 <span class="text-muted">Evolution</span>
             </h2>
             <p class="lead"><b>Darwin’s Theory of Natural Selection:</b>
-                <ol>1. Populations produce more offspring than can possibly survive.</ol>
-                <ol>2. Individuals in a population vary extensively from each other.</ol>
-                <ol>3. Individuals whose characteristics best fit to environment leave more offspring than less fit.</ol>
-                <ol>4. Favorable characteristics accumulating over generations.</ol>
+                <ul> 1. Populations produce more offspring than can possibly survive.</ul>
+                <ul> 2. Individuals in a population vary extensively from each other.</ul>
+                <ul> 3. Individuals whose characteristics best fit to environment leave more offspring than less fit.</ul>
+                <ul> 4. Favorable characteristics accumulating over generations.</ul>
 
             </p>
         </div>
 
-        <hr class="featurette-divider">
+        <hr class="featurette-divider" id="contact">
 
         <!-- Third Featurette -->
-        <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="css/here.jpg">
+        <div class="featurette" >
+            <img class="featurette-image img-circle img-responsive pull-right" src="css/chro.jpg">
             <h2 class="featurette-heading">The Third Theme Is
                 <span class="text-muted">Heredity</span>
             </h2>
@@ -142,12 +153,11 @@
 
         <hr class="featurette-divider">
 
+
         <!-- Footer -->
         <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2017</p>
-                </div>
+            <div id="copy">
+                <p>Copyright © 2017 | Mena Bebawy</p>
             </div>
         </footer>
 
@@ -159,7 +169,31 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Add smooth scrolling to all links in navbar + footer link
+            $(".navbar a,[href='#myPage']").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
 
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 900, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        })
+    </script>
 </body>
 
 </html>
