@@ -16,7 +16,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('dna2.jpg') no-repeat center center scroll;
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 35px;
+    padding-top: 100px;
     padding-bottom: 235px;
 }
 
