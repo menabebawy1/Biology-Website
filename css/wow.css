@@ -16,8 +16,7 @@ body {
     background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('dna2.jpg') no-repeat center center scroll;
     background-attachment: fixed;
     background-size: cover;
-    padding-top: 100px;
-    padding-bottom: 235px;
+    padding-bottom: 200px;
 }
 
 .headline {
@@ -248,4 +247,10 @@ footer {
 
 b {
     font-size: 18px;
+}
+
+.featurette-divider { 
+  border : 0;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); 
 }
