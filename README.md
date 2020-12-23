@@ -5,5 +5,5 @@ The website includes the main themes of the class and points that go into detail
 
 The following is a little preview:
 
-![Website Preview](Screen Shot 2020-12-23 at 6.03.31 PM.png)
+![Website Preview](PM.png)
 
